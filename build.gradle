@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+
+allprojects {
+    group = 'com.soundcloud.android'
+    version = project.VERSION
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    repositories {
+        jcenter()
+        google()
+    }
+
+}
